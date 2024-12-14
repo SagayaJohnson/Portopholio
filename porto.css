@@ -1,0 +1,247 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto+Slab:wght@300;700&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(120deg, #f3e6e8, #e0c8f4, #d9f2f4);
+  background-size: 200% 200%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: #4A148C;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+  position: relative;
+}
+
+.header .profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px solid #FFF;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.header .profile-photo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.header h1 span {
+  color: black;
+}
+
+.header p {
+  font-size: 30px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(74, 20, 140, 0.9);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: black;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section h2::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background: #4A148C;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Education Section */
+.education-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.education-list li {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education-list h3 {
+  color: #4A148C;
+  margin-bottom: 5px;
+}
+
+.education-list p {
+  margin: 0;
+  color: #777;
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: #4A148C;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #555;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form .btn {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4A148C;
+}
+
+.contact-form .btn {
+  background: #4A148C;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background: #6A1B9A;
+}
+
+/* Footer */
+.footer {
+  background: rgba(74, 20, 140, 0.9);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #DDD;
+}
